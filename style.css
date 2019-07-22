@@ -15,7 +15,6 @@
 }
 
 body {
-    /*background: rgb(74, 107, 197);*/
     background: rgb(125, 207, 221);
     height: 100vh;
     width: 100vw;
@@ -25,7 +24,8 @@ body {
 }
 
 .calculator {
-    width: 400px;    
+    width: 40vh;
+    min-width: 400px;
     overflow: auto;
 }
 
@@ -59,8 +59,10 @@ body {
 }
 
 button {
-    width: 100px;
-    height: 100px;
+    width: 10vh;
+    height: 10vh;
+    min-width: 100px;
+    min-height: 100px;
     outline: none;
     float: left;
     clear: right;
@@ -73,7 +75,8 @@ button {
 }
 
 button.spantwo {
-    width: 200px;
+    min-width: 200px;
+    width: 20vh;
 }
 
 button.number:hover {
