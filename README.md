@@ -1,0 +1,1 @@
+This project helped me reflect on everything that I had learned so far. And it helped me, forced me to learn more than I knew. I feel the knowledge in my head now. I had to grind the most during the error checking part. This was quite an experience. It's 4AM in the morning right now, so nevermind the inconsistent writing.
