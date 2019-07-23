@@ -21,11 +21,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    touch-action: manipulation;
 }
 
 .calculator {
     width: 40vh;
-    min-width: 400px;
+    min-width: 200px;
     overflow: auto;
 }
 
@@ -61,8 +62,8 @@ body {
 button {
     width: 10vh;
     height: 10vh;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 50px;
+    min-height: 50px;
     outline: none;
     float: left;
     clear: right;
@@ -75,7 +76,7 @@ button {
 }
 
 button.spantwo {
-    min-width: 200px;
+    min-width: 100px;
     width: 20vh;
 }
 
