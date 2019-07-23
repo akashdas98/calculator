@@ -75,6 +75,11 @@ function result() {
 
 function updateScreen() {
     previous.textContent = previousOperand + ' ' + previousOperator;
+    if(currentOperand.length > 16) {
+        current.textContent = 'Error';
+        currentOperand = '';
+        return;
+    }
     current.textContent = currentOperand;
 }
 
@@ -96,5 +101,6 @@ function operate(operator) {
 
 function appendCurrent(number) {
     if(number == '.' && currentOperand.includes('.')) return;
-    currentOperand += number;
+    if(currentOperand.length < 15)
+        currentOperand += number;
 }

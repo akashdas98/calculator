@@ -48,14 +48,14 @@ body {
 }
 
 .previous {
-    font-size: 1.5em;
-    padding: 10px 0;
+    font-size: 3vh;
+    padding: 1% 2%;
     opacity: 0.75;
 }
 
 .current {
-    font-size: 2.5em;
-    padding: 10px 0;
+    font-size: 6vh;
+    padding: 1% 2%;
 }
 
 button {
@@ -68,7 +68,7 @@ button {
     clear: right;
     background: rgba(53, 34, 29, 0.8);
     border: 1px solid rgb(90, 90, 90);
-    font-size: 1.8em;
+    font-size: 4vh;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: all 0.2s ease;
