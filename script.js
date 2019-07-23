@@ -66,7 +66,7 @@ function clear() {
 }
 
 function result() {
-    if(currentOperand == '') return;
+    if(currentOperand == ''|| currentOperand == '-') return;
     let n = calculate(currentOperand, previousOperand, previousOperator)
     currentOperand = parseFloat(n.toFixed(10)).toString();
     previousOperand = '';
@@ -88,7 +88,8 @@ function operate(operator) {
         if(operator == '-') {
             currentOperand = operator;
             return;
-        } return;
+        } 
+        return;
     }
     if(previousOperand != '') {
         let n = calculate(currentOperand, previousOperand, previousOperator)
