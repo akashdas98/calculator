@@ -75,7 +75,7 @@ function result() {
 
 function updateScreen() {
     previous.textContent = previousOperand + ' ' + previousOperator;
-    if(currentOperand.length > 16) {
+    if(currentOperand.length > 16 || currentOperand == 'Infinity' || isNaN(currentOperand)) {
         current.textContent = 'Error';
         currentOperand = '';
         return;
