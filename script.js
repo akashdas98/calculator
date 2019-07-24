@@ -74,12 +74,13 @@ function result() {
 }
 
 function updateScreen() {
-    previous.textContent = previousOperand + ' ' + previousOperator;
-    if(currentOperand.length > 16 || currentOperand == 'Infinity' || isNaN(currentOperand)) {
+    if(currentOperand.length > 16 || currentOperand == 'Infinity' || currentOperand == '-Infinity' || (isNaN(currentOperand) && currentOperand != '-') || previousOperand.length > 16 || previousOperand == 'Infinity' || previousOperand == '-Infinity' || isNaN(previousOperand)) {
         current.textContent = 'Error';
-        currentOperand = '';
+        previous.textContent = '';
+        clear();
         return;
     }
+    previous.textContent = previousOperand + ' ' + previousOperator;
     current.textContent = currentOperand;
 }
 
